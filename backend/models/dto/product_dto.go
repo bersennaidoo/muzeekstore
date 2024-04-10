@@ -1,6 +1,6 @@
-package models
+package dto
 
-type Product struct {
+type ProductDTO struct {
 	Image       string  `json:"img"`
 	ImageAlt    string  `json:"imgalt"`
 	Price       float64 `json:"price"`
