@@ -6,11 +6,11 @@ import (
 
 type Product struct {
 	gorm.Model
-	Image       string
-	ImageAlt    string
-	Price       float64
-	Promotion   float64
-	ProductName string
-	Description string
-	Orders []Order
+	Image       string  `json:"img"`
+	ImageAlt    string  `json:"imgalt"`
+	Price       float64 `json:"price"`
+	Promotion   float64 `json:"promotion"`
+	ProductName string  `json:"productname"`
+	Description string  `json:"desc"`
+	Orders      []Order `json:"orders"`
 }

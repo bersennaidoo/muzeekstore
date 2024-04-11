@@ -6,11 +6,11 @@ import (
 
 type Customer struct {
 	gorm.Model
-	Name      string
-	FirstName string
-	LastName  string
-	Email     string
-	Password  string
-	LoggedIn  bool
-	Order []Order
+	Name      string  `json:"name"`
+	FirstName string  `json:"firstname"`
+	LastName  string  `json:"lastname"`
+	Email     string  `json:"email"`
+	Password  string  `json:"password"`
+	LoggedIn  bool    `json:"loggedin"`
+	Order     []Order `json:"orders"`
 }
